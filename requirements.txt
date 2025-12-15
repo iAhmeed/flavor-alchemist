@@ -1,0 +1,11 @@
+pandas
+numpy
+scipy
+scikit-learn
+mlxtend
+streamlit
+networkx
+matplotlib
+plotly
+nltk
+spacy
