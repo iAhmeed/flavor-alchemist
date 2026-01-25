@@ -1,0 +1,24 @@
+2026-01-25 22:39:23,644 INFO    MainThread:1160 [wandb_setup.py:_flush():81] Current SDK version is 0.24.0
+2026-01-25 22:39:23,644 INFO    MainThread:1160 [wandb_setup.py:_flush():81] Configure stats pid to 1160
+2026-01-25 22:39:23,644 INFO    MainThread:1160 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-01-25 22:39:23,645 INFO    MainThread:1160 [wandb_init.py:setup_run_log_directory():717] Logging user logs to D:\The Flavor Alchemist\wandb\run-20260125_223923-1k8p8lon\logs\debug.log
+2026-01-25 22:39:23,645 INFO    MainThread:1160 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to D:\The Flavor Alchemist\wandb\run-20260125_223923-1k8p8lon\logs\debug-internal.log
+2026-01-25 22:39:23,645 INFO    MainThread:1160 [wandb_init.py:init():844] calling init triggers
+2026-01-25 22:39:23,646 INFO    MainThread:1160 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-01-25 22:39:23,646 INFO    MainThread:1160 [wandb_init.py:init():892] starting backend
+2026-01-25 22:39:26,494 INFO    MainThread:1160 [wandb_init.py:init():895] sending inform_init request
+2026-01-25 22:39:26,529 INFO    MainThread:1160 [wandb_init.py:init():903] backend started and connected
+2026-01-25 22:39:26,647 INFO    MainThread:1160 [wandb_init.py:init():973] updated telemetry
+2026-01-25 22:39:26,744 INFO    MainThread:1160 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-01-25 22:39:27,742 INFO    MainThread:1160 [wandb_init.py:init():1044] starting run threads in backend
+2026-01-25 22:39:28,514 INFO    MainThread:1160 [wandb_run.py:_console_start():2529] atexit reg
+2026-01-25 22:39:28,514 INFO    MainThread:1160 [wandb_run.py:_redirect():2377] redirect: wrap_raw
+2026-01-25 22:39:28,514 INFO    MainThread:1160 [wandb_run.py:_redirect():2446] Wrapping output streams.
+2026-01-25 22:39:28,515 INFO    MainThread:1160 [wandb_run.py:_redirect():2469] Redirects installed.
+2026-01-25 22:39:28,530 INFO    MainThread:1160 [wandb_init.py:init():1084] run started, returning control to user process
+2026-01-25 22:39:31,134 INFO    MainThread:1160 [wandb_run.py:_finish():2295] finishing run iahmed-esi-sba/flavor-alchemist/1k8p8lon
+2026-01-25 22:39:31,135 INFO    MainThread:1160 [wandb_run.py:_atexit_cleanup():2494] got exitcode: 0
+2026-01-25 22:39:31,136 INFO    MainThread:1160 [wandb_run.py:_restore():2476] restore
+2026-01-25 22:39:31,136 INFO    MainThread:1160 [wandb_run.py:_restore():2482] restore done
+2026-01-25 22:39:32,852 INFO    MainThread:1160 [wandb_run.py:_footer_sync_info():3870] logging synced files

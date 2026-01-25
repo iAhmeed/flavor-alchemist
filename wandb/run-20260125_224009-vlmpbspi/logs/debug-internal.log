@@ -1,0 +1,13 @@
+{"time":"2026-01-25T22:40:12.3319958+01:00","level":"INFO","msg":"stream: starting","core version":"0.24.0"}
+{"time":"2026-01-25T22:40:12.9271297+01:00","level":"INFO","msg":"stream: created new stream","id":"vlmpbspi"}
+{"time":"2026-01-25T22:40:12.9271297+01:00","level":"INFO","msg":"handler: started","stream_id":"vlmpbspi"}
+{"time":"2026-01-25T22:40:12.9296045+01:00","level":"INFO","msg":"stream: started","id":"vlmpbspi"}
+{"time":"2026-01-25T22:40:12.9296045+01:00","level":"INFO","msg":"writer: started","stream_id":"vlmpbspi"}
+{"time":"2026-01-25T22:40:12.9296045+01:00","level":"INFO","msg":"sender: started","stream_id":"vlmpbspi"}
+{"time":"2026-01-25T22:40:17.0782164+01:00","level":"WARN","msg":"sender: sendUseArtifact: job builder disabled, skipping"}
+{"time":"2026-01-25T22:40:27.7800827+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-01-25T22:40:28.1617752+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-01-25T22:40:28.1808532+01:00","level":"INFO","msg":"stream: closing","id":"vlmpbspi"}
+{"time":"2026-01-25T22:40:28.1808532+01:00","level":"INFO","msg":"handler: closed","stream_id":"vlmpbspi"}
+{"time":"2026-01-25T22:40:28.182167+01:00","level":"INFO","msg":"sender: closed","stream_id":"vlmpbspi"}
+{"time":"2026-01-25T22:40:28.1827951+01:00","level":"INFO","msg":"stream: closed","id":"vlmpbspi"}

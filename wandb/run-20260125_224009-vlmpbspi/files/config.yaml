@@ -1,0 +1,58 @@
+_wandb:
+    value:
+        cli_version: 0.24.0
+        e:
+            xvpyi6c5oopuens4pzwxg51gw9iky4qw:
+                args:
+                    - --apriori_min_support
+                    - "0.03"
+                    - --fp_growth_min_support
+                    - "0.02"
+                codePath: mlops\scripts\train.py
+                codePathLocal: mlops\scripts\train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "56680771584"
+                        used: "529133568"
+                email: ay.bouguessa@esi-sba.dz
+                executable: C:\Users\HP\AppData\Local\Programs\Python\Python313\python.exe
+                git:
+                    commit: 9af7bbe9ff7f652e2bdfcefcd5f674e165fc6c50
+                    remote: https://github.com/iAhmeed/flavor-alchemist.git
+                host: DESKTOP-THJSOFL
+                memory:
+                    total: "8425529344"
+                os: Windows-11-10.0.26200-SP0
+                program: D:\The Flavor Alchemist\mlops\scripts\train.py
+                python: CPython 3.13.1
+                root: D:\The Flavor Alchemist
+                startedAt: "2026-01-25T21:40:09.709443Z"
+                writerId: xvpyi6c5oopuens4pzwxg51gw9iky4qw
+        m: []
+        python_version: 3.13.1
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 2
+                - 16
+            "4": 3.13.1
+            "5": 0.24.0
+            "8":
+                - 3
+            "12": 0.24.0
+            "13": windows-amd64
+apriori_min_confidence:
+    value: 0.33
+apriori_min_support:
+    value: 0.03
+fp_growth_min_confidence:
+    value: 0.6
+fp_growth_min_support:
+    value: 0.02

@@ -1,0 +1,71 @@
+Downloading dataset artifact...
+C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\analytics\sentry.py:279: DeprecationWarning: The `Scope.user` setter is deprecated in favor of `Scope.set_user()`.
+  self.scope.user = {"email": email}
+[34m[1mwandb[0m:   1 of 1 files downloaded.
+Training using data at D:\The Flavor Alchemist\artifacts\recipes-dataset-v0\recipes.csv...
+Loading and cleaning data...
+D:\The Flavor Alchemist\src\cleaner.py:10: DtypeWarning: Columns (1,2,4,5,6,7,8,9,10,11,12,13,14,27,28) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(filepath)
+Encoding 1208 transactions...
+Running Apriori algorithm with min_support=0.05...
+Found 69 frequent itemsets with Apriori.
+Generating rules with min_confidence=0.33...
+Generated 74 rules with Apriori.
+Average lift of Apriori rules: 1.7640
+Average confidence of Apriori rules: 0.5194
+Running FP-Growth with min_support=0.04...
+Found 99 frequent itemsets.
+Generating rules with min_confidence=0.6...
+Generated 29 rules.
+Average lift of FP-Growth rules: 1.8809
+Average confidence of FP-Growth rules: 0.6880
+Training complete. Rules found: 29
+[34m[1mwandb[0m: [32m[41mERROR[0m HTTP 404: entity flavor-alchemist not found
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\apis\normalize.py", line 28, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\artifacts\artifact.py", line 2479, in link
+    data = client.execute(gql_op, variable_values=gql_vars)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\apis\public\api.py", line 111, in execute
+    return self._execute_decorated(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\lib\retry.py", line 319, in wrapped_fn
+    return retrier(*args, **kargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\lib\retry.py", line 157, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\apis\public\api.py", line 123, in _wrapped
+    return self._client.execute(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 71, in execute
+    request.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\The Flavor Alchemist\mlops\scripts\train.py", line 79, in <module>
+    train(args)
+    ~~~~~^^^^^^
+  File "D:\The Flavor Alchemist\mlops\scripts\train.py", line 63, in train
+    run.link_artifact(model_artifact, f'{PROJECT_NAME}/model-registry/FlavorModel_Production')
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\wandb_run.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\wandb_run.py", line 458, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\wandb_run.py", line 445, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\sdk\wandb_run.py", line 3011, in link_artifact
+    return artifact.link(target.to_str(), aliases)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages\wandb\apis\normalize.py", line 45, in wrapper
+    raise CommError(message, error)
+wandb.errors.errors.CommError: HTTP 404: entity flavor-alchemist not found

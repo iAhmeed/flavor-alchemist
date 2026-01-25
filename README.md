@@ -16,4 +16,5 @@
 - `data/`: Datasets.
 - `src/`: Source code for mining and processing.
 - `app/`: Streamlit application.
+- `mlops/`: MLOps pipeline and automation.
 - `notebooks/`: Jupyter notebooks for analysis.

@@ -4,12 +4,15 @@ from mlxtend.frequent_patterns import fpgrowth, association_rules, apriori
 from src.cleaner import load_and_clean_data
 CACHE_PATH = "data/rules_cache.pkl"
 
-def mine_rules(apriori_min_support=0.01, fp_growth_min_support=0.01, apriori_min_confidence=0.1, fp_growth_min_confidence=0.1):
+def mine_rules(apriori_min_support=0.01, fp_growth_min_support=0.01, apriori_min_confidence=0.1, fp_growth_min_confidence=0.1, data_filepath=None):
     """
     Mines association rules from the recipe dataset.
     """
     print("Loading and cleaning data...")
-    transactions, _ = load_and_clean_data()
+    if data_filepath:
+         transactions, _ = load_and_clean_data(filepath=data_filepath)
+    else:
+         transactions, _ = load_and_clean_data()
     
     if not transactions:
         print("No transactions found.")

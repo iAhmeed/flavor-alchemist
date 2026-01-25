@@ -1,0 +1,10 @@
+Loading reference data for simulation...
+File not found at data/recipes.csv
+Traceback (most recent call last):
+  File "D:\The Flavor Alchemist\mlops\scripts\monitor.py", line 74, in <module>
+    monitor()
+    ~~~~~~~^^
+  File "D:\The Flavor Alchemist\mlops\scripts\monitor.py", line 24, in monitor
+    transactions, _ = load_and_clean_data()
+    ^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object

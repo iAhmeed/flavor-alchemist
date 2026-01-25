@@ -9,3 +9,8 @@ matplotlib
 plotly
 nltk
 spacy
+
+wandb
+python-pptx
+fastapi
+uvicorn

@@ -1,0 +1,28 @@
+{
+  "os":  "Windows-11-10.0.26200-SP0",
+  "python":  "CPython 3.13.1",
+  "startedAt":  "2026-01-25T21:40:58.500260Z",
+  "program":  "D:\\The Flavor Alchemist\\mlops\\scripts\\monitor.py",
+  "codePath":  "mlops\\scripts\\monitor.py",
+  "codePathLocal":  "mlops\\scripts\\monitor.py",
+  "git":  {
+    "remote":  "https://github.com/iAhmeed/flavor-alchemist.git",
+    "commit":  "9af7bbe9ff7f652e2bdfcefcd5f674e165fc6c50"
+  },
+  "email":  "ay.bouguessa@esi-sba.dz",
+  "root":  "D:\\The Flavor Alchemist",
+  "host":  "DESKTOP-THJSOFL",
+  "executable":  "C:\\Users\\HP\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "56680771584",
+      "used":  "529264640"
+    }
+  },
+  "memory":  {
+    "total":  "8425529344"
+  },
+  "writerId":  "m23jq13cm6qmske9td8df9681fal38r8"
+}
